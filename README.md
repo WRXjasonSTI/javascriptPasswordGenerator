@@ -6,13 +6,13 @@ The criteria provided for this activity included uses of alerts for the user to 
 
 Upon visiting the page, you will be prompted for the desired password criteria:
 
-![First Alert Screenshot](/c/Users/jason/Desktop/BCS/gwu-arl-fsf-pt-05-2020-u-c/week3/weekThreeHomework/javascriptPasswordGenerator/Assets/alert1)
-![Second Alert Screenshot](.Assets/alert2.PNG)
-![Third Alert Screenshot](.Assets/alert3.PNG)
+![First Alert Screenshot](/Assets/alert1)
+![Second Alert Screenshot](/Assets/alert2.PNG)
+![Third Alert Screenshot](/Assets/alert3.PNG)
 
 Once all the parameters have been set, the GENERATE PASSWORD button will populate a password in the text area that can then be copied to the clipboard with the COPY TEXT button.
 
-![Result Screenshot](.Assets/Result.PNG)
+![Result Screenshot](/Assets/Result.PNG)
 
 # Code walkthrough:
 

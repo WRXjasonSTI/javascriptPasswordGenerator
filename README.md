@@ -6,7 +6,7 @@ The criteria provided for this activity included uses of alerts for the user to 
 
 Upon visiting the page, you will be prompted for the desired password criteria:
 
-![First Alert Screenshot](/c/Users/jason/Desktop/BCS/gwu-arl-fsf-pt-05-2020-u-c/week3/weekThreeHomework/javascriptPasswordGenerator/Assets/alert1)
+![First Alert Screenshot](/Assets/alert1.PNG)
 ![Second Alert Screenshot](.Assets/alert2.PNG)
 ![Third Alert Screenshot](.Assets/alert3.PNG)
 

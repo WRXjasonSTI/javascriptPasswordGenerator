@@ -1,12 +1,12 @@
 # Introduction
 
-Hello and thank you for viewing my Password Generator site!
+Hello and thank you for viewing my Password Generator! The website can be viewed here: https://wrxjasonsti.github.io/javascriptPasswordGenerator/
 
 The criteria provided for this activity included uses of alerts for the user to specify the format of the requested password. I decided to use the alert functions as soon as the website was opened. Until it can be revisited, the user can refresh the browser to re-enter parameters rather than re-entering the parameters every time the user wanted to generate a password with the button.
 
 Upon visiting the page, you will be prompted for the desired password criteria:
 
-![First Alert Screenshot](.Assets/alert1.PNG)
+![First Alert Screenshot](/c/Users/jason/Desktop/BCS/gwu-arl-fsf-pt-05-2020-u-c/week3/weekThreeHomework/javascriptPasswordGenerator/Assets/alert1)
 ![Second Alert Screenshot](.Assets/alert2.PNG)
 ![Third Alert Screenshot](.Assets/alert3.PNG)
 

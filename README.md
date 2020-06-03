@@ -6,7 +6,7 @@ The criteria provided for this activity included uses of alerts for the user to 
 
 Upon visiting the page, you will be prompted for the desired password criteria:
 
-![First Alert Screenshot](/Assets/alert1)
+![First Alert Screenshot](/Assets/alert1.PNG)
 ![Second Alert Screenshot](/Assets/alert2.PNG)
 ![Third Alert Screenshot](/Assets/alert3.PNG)
 

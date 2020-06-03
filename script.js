@@ -4,9 +4,9 @@ var includeSymbolsElement = confirm("Would you like special characters, like $#%
 var includeNumbersElement = confirm("Would you like numbers, like 1234, in your password? (OK for Yes, Cancel for No)")
 var includeUppercaseElement = confirm("Would you like to include UPPER CASE CHARACTERS in your password? (OK for Yes, Cancel for No)");
 
-//testing
-// var characterAmountNumber = "10";
-// var includeSymbolsElement = false;
+// testing
+// var characterAmountNumber = "20";
+// var includeSymbolsElement = true;
 // var includeNumbersElement = false;
 // var includeUppercaseElement = false;
 
@@ -26,8 +26,7 @@ const SYMBOL_CHAR_CODES = arrayFromLowToHigh(33, 47).concat(
   arrayFromLowToHigh(123, 126)
 )
 
-
-// RNG to generate num for char code as array
+// Function to generate num for char code as array
 function arrayFromLowToHigh(low, high) {
 	const array = []
 	for (let i = low; i <= high; i++) {
@@ -39,20 +38,25 @@ function arrayFromLowToHigh(low, high) {
 // Add event listener to generate button
   generateBtn.addEventListener("click", e => {
   e.preventDefault()
-  const characterAmount = parseInt(characterAmountNumber);
-  const includeUppercase = includeUppercaseElement
-  const includeNumbers = includeNumbersElement
-  const includeSymbols = includeSymbolsElement
-  const password = generatePassword(characterAmount, includeUppercase, includeNumbers, includeSymbols)
-  passField.innerHTML = password
+    if (parseInt(characterAmountNumber) >= 7 && parseInt(characterAmountNumber) <= 128) {
+    const characterAmount = parseInt(characterAmountNumber);
+    const includeUppercase = includeUppercaseElement;
+    const includeNumbers = includeNumbersElement;
+    const includeSymbols = includeSymbolsElement;
+    const password = generatePassword(characterAmount, includeUppercase, includeNumbers, includeSymbols);
+    passField.innerHTML = password;
+    }
+    else {
+      alert("Please Refresh and enter a character count value between 8 and 128");
+    }
   })
 
-
+// Generate password function that includes checking parameters
 function generatePassword(characterAmount, includeUppercase, includeNumbers, includeSymbols) {
   let charCodes = LOWERCASE_CHAR_CODES
-  if (includeUppercase = true) charCodes = charCodes.concat(UPPERCASE_CHAR_CODES)
-  if (includeSymbols = true) charCodes = charCodes.concat(SYMBOL_CHAR_CODES)
-  if (includeNumbers = true) charCodes = charCodes.concat(NUMBER_CHAR_CODES)
+  if (includeUppercase === true) charCodes = charCodes.concat(UPPERCASE_CHAR_CODES)
+  if (includeSymbols === true) charCodes = charCodes.concat(SYMBOL_CHAR_CODES)
+  if (includeNumbers === true) charCodes = charCodes.concat(NUMBER_CHAR_CODES)
   
   const passwordCharacters = []
   for (let i = 0; i < characterAmount; i++) {
@@ -61,7 +65,6 @@ function generatePassword(characterAmount, includeUppercase, includeNumbers, inc
   }
   return passwordCharacters.join('')
 }
-
 
 // Copy to clipboard https://www.w3schools.com/howto/howto_js_copy_clipboard.asp
 

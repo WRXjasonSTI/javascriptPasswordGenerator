@@ -20,6 +20,8 @@ The alert system serves as the user variable collector. The variables are then f
 
 The generatePassword function uses a pair of For loops that takes into account the user's parameters. The user-input character count sets the loop frequency, and the character selection parameters select the Array that the password generator will use. Combining a frequency For loop and using ASCII Character codes cleans up the code a lot.
 
+A conditional statement is used to ensure that the character count rule is followed.
+
 I hope this program can be useful to you! Although this is a final submission, I will be revisiting this program once I have acquired more JS knowledge. Regards.
 
 - - -
